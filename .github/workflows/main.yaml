@@ -1,0 +1,20 @@
+name: java workflow
+
+on: [push]
+
+jobs:
+  print_message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Print Current Date
+        run: date
+
+      - name: List Files in Directory
+        run: ls -la
+
+      - name: Display System Info
+        run: uname -a
