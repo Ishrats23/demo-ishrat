@@ -3,7 +3,7 @@ name: java workflow
 on: [push]
 
 jobs:
-  print_message:
+  system-info:
     runs-on: ubuntu-latest
 
     steps:
